@@ -1,1 +1,9 @@
+# The root of the website on the website server
+
 PLATED_ROOT=/zerotorick
+
+
+
+# The directory to write output files into
+
+PLATED_OUTPUT=../docs
