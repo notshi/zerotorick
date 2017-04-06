@@ -3,7 +3,7 @@
 <style>
 
 *		{box-sizing:border-box;}
-body	{background:#f7f4fd; font-family:mono, sans-serif; font-size:16px; line-height:24px; color:#3a3a3a; width:100%; padding:50px;}
+body	{background:#f7f4fd; font-family:mono, sans-serif; font-size:16px; line-height:24px; color:#3a3a3a; width:100%; padding:0;}
 h1		{font-size:4em; font-weight:normal; color:#1400ff;}
 h2		{font-size:2em; font-weight:normal;}
 
@@ -16,11 +16,130 @@ a.bar:hover	{background-color:#1400ff; border-bottom:none;}
 .nav	{display:inline-block; vertical-align:top; width:50%;}
 .nav:nth-of-type(2)	{text-align:right;}
 
-.line, .blog_wrap	{border-top:1px dashed #1400ff; margin-top:40px; margin-bottom:40px; position:relative;}
+.blog_line, .blog_wrap	{border-top:1px dashed #1400ff; margin-top:40px; margin-bottom:40px; position:relative;}
 .blog_info	{position:absolute; right:10px; top:10px;}
 
+
+/*	Styles for rm char	*/
+
+.morty		{background:url('http://esyou.com/data/rmfactor/morty.png')10px 20px; width:100px; height:100px; border-radius:100px; background-repeat:no-repeat; background-size:70px;}
+.rick		{background:url('http://esyou.com/data/rmfactor/rick.png')top center; width:100px; height:100px; border-radius:100px; background-repeat:no-repeat; background-size:75px;}
+
+
+/*	Styles for Doctor Who page	*/
+
+.wrap		{padding-top:60px; padding-bottom:60px;}
+.title		{color:#000; font-size:32px; text-align:center; width:100%; padding-bottom:40px;}
+
+.doc		{width:100px; height:100px;}
+.doc1		{background:url('http://esyou.com/data/rmfactor/doctors.jpg')0px 0px; width:100px; height:100px; border-radius:100px; background-repeat:no-repeat;}
+.doc2		{background:url('http://esyou.com/data/rmfactor/doctors.jpg')-135px 0px; width:100px; height:100px; border-radius:100px; background-repeat:no-repeat;}
+.doc3		{background:url('http://esyou.com/data/rmfactor/doctors.jpg')-255px 0px; width:100px; height:100px; border-radius:100px; background-repeat:no-repeat;}
+.doc4		{background:url('http://esyou.com/data/rmfactor/doctors.jpg')-390px 0px; width:100px; height:100px; border-radius:100px; background-repeat:no-repeat;}
+.doc5		{background:url('http://esyou.com/data/rmfactor/doctors.jpg')0px -198px; width:100px; height:100px; border-radius:100px; background-repeat:no-repeat;}
+.doc6		{background:url('http://esyou.com/data/rmfactor/doctors.jpg')-98px -159px; width:100px; height:100px; border-radius:100px; background-repeat:no-repeat; background-size:400px;}
+.doc7		{background:url('http://esyou.com/data/rmfactor/doctors.jpg')-200px -160px; width:100px; height:100px; border-radius:100px; background-repeat:no-repeat; background-size:400px;}
+.doc8		{background:url('http://esyou.com/data/rmfactor/doctors.jpg')-300px -160px; width:100px; height:100px; border-radius:100px; background-repeat:no-repeat; background-size:400px;}
+.doc9		{background:url('http://esyou.com/data/rmfactor/doctors.jpg')0px -396px; width:100px; height:100px; border-radius:100px; background-repeat:no-repeat;}
+.doc10		{background:url('http://esyou.com/data/rmfactor/doctors.jpg')-100px -321px; width:100px; height:100px; border-radius:100px; background-repeat:no-repeat; background-size:400px;}
+.doc11		{background:url('http://esyou.com/data/rmfactor/doctors.jpg')-200px -326px; width:100px; height:100px; border-radius:100px; background-repeat:no-repeat; background-size:400px;}
+.doc12		{background:url('http://esyou.com/data/rmfactor/doctors.jpg')-315px -323px; width:100px; height:100px; border-radius:100px; background-repeat:no-repeat; background-size:400px;}
+.doc13		{background:url('http://esyou.com/data/rmfactor/wardoc.jpg')top center; width:100px; height:100px; border-radius:100px; background-repeat:no-repeat; background-size:100px;}
+
+table		{margin:0 auto;}
+
+table.slide	tr		{height:100px; padding-bottom:20px;}
+table.slide	tr:first-of-type	{height:initial;}
+table.slide td		{width:100px; position:relative;}
+table.slide td:nth-of-type(2)	{width:960px;}
+table.slide div		{position:absolute; top:0; left:0;}
+table.slide .line	{width:960px; height:10px; background-color:#ababab; border-radius:4px; margin-top:50px;}
+table.slide .doc1	{left:768px;}
+table.slide .doc2	{left:420px;}
+table.slide .doc3	{left:624px;}
+table.slide .doc4	{left:300px;}
+table.slide .doc5	{left:96px;}
+table.slide .doc6	{left:300px;}
+table.slide .doc7	{left:830px;}
+table.slide .doc8	{left:420px;}
+table.slide .doc9	{left:540px;}
+table.slide .doc10	{left:720px;}
+table.slide .doc11	{left:0px;}
+table.slide .doc12	{left:895px;}
+table.slide .doc13	{left:890px;}
+
 </style></head>
-<body><h2 id="welcome">Welcome</h2>
-<p>Here is a web page rendered from markdown.</p>
-</body>
+<body><div class="wrap">
+<table class="slide">
+	<tr>
+		<th colspan="3" class="title">Doctor Who on a scale of zero to Rick</th>
+	</tr>
+	<tr>
+		<td><div class="morty"></div></td>
+		<td><div class="line"></div><div class="doc1"></div></td>
+		<td><div class="rick"></div></td>
+	</tr>
+	<tr>
+		<td><div class="morty"></div></td>
+		<td><div class="line"></div><div class="doc2"></div></td>
+		<td><div class="rick"></div></td>
+	</tr>
+	<tr>
+		<td><div class="morty"></div></td>
+		<td><div class="line"></div><div class="doc3"></div></td>
+		<td><div class="rick"></div></td>
+	</tr>
+	<tr>
+		<td><div class="morty"></div></td>
+		<td><div class="line"></div><div class="doc4"></div></td>
+		<td><div class="rick"></div></td>
+	</tr>
+	<tr>
+		<td><div class="morty"></div></td>
+		<td><div class="line"></div><div class="doc5"></div></td>
+		<td><div class="rick"></div></td>
+	</tr>
+	<tr>
+		<td><div class="morty"></div></td>
+		<td><div class="line"></div><div class="doc6"></div></td>
+		<td><div class="rick"></div></td>
+	</tr>
+	<tr>
+		<td><div class="morty"></div></td>
+		<td><div class="line"></div><div class="doc7"></div></td>
+		<td><div class="rick"></div></td>
+	</tr>
+	<tr>
+		<td><div class="morty"></div></td>
+		<td><div class="line"></div><div class="doc8"></div></td>
+		<td><div class="rick"></div></td>
+	</tr>
+	<tr>
+		<td><div class="morty"></div></td>
+		<td><div class="line"></div><div class="doc13"></div></td>
+		<td><div class="rick"></div></td>
+	</tr>
+	<tr>
+		<td><div class="morty"></div></td>
+		<td><div class="line"></div><div class="doc9"></div></td>
+		<td><div class="rick"></div></td>
+	</tr>
+	<tr>
+		<td><div class="morty"></div></td>
+		<td><div class="line"></div><div class="doc10"></div></td>
+		<td><div class="rick"></div></td>
+	</tr>
+	<tr>
+		<td><div class="morty"></div></td>
+		<td><div class="line"></div><div class="doc11"></div></td>
+		<td><div class="rick"></div></td>
+	</tr>
+	<tr>
+		<td><div class="morty"></div></td>
+		<td><div class="line"></div><div class="doc12"></div></td>
+		<td><div class="rick"></div></td>
+	</tr>
+</table>
+
+</div></body>
 </html>
